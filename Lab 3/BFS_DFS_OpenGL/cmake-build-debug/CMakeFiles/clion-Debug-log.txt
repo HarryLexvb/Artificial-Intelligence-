@@ -1,0 +1,7 @@
+/var/lib/snapd/snap/clion/229/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/var/lib/snapd/snap/clion/229/bin/ninja/linux/x64/ninja -G Ninja -S "/home/harrylex/Documents/Clion Projects/BFS_DFS_OpenGL" -B "/home/harrylex/Documents/Clion Projects/BFS_DFS_OpenGL/cmake-build-debug"
+-- Found OpenGL: /usr/lib/libOpenGL.so   
+-- Found GLUT: TRUE  
+-- Found SFML 2.5.1 in /usr/lib64/cmake/SFML
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/harrylex/Documents/Clion Projects/BFS_DFS_OpenGL/cmake-build-debug
