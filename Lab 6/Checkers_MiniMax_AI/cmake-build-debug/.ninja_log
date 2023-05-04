@@ -1,0 +1,17 @@
+# ninja log v5
+1	730	7030462750146709	CMakeFiles/Checkers_MiniMax_AI.dir/main.cpp.obj	5d5e602b3e3e8d7f
+734	1000	7030462752789713	Checkers_MiniMax_AI.exe	6c668d7271dbe39a
+12	1299	7030470537937947	CMakeFiles/Checkers_MiniMax_AI.dir/main.cpp.obj	5d5e602b3e3e8d7f
+20	1623	7030470541219184	CMakeFiles/Checkers_MiniMax_AI.dir/game.cpp.obj	a2164f22b5359124
+4	1783	7030470542817352	CMakeFiles/Checkers_MiniMax_AI.dir/board.cpp.obj	e8b1e187ba4b1009
+1302	2195	7030470546939061	CMakeFiles/Checkers_MiniMax_AI.dir/pawn.cpp.obj	eefd90369a946649
+2195	2503	7030470549941074	Checkers_MiniMax_AI.exe	29f87cdf51282c71
+7	2021	7030637417069271	CMakeFiles/Checkers_MiniMax_AI.dir/main.cpp.obj	5d5e602b3e3e8d7f
+2025	2447	7030637421268043	Checkers_MiniMax_AI.exe	29f87cdf51282c71
+5	1344	7036504345530811	CMakeFiles/Checkers_MiniMax_AI.dir/main.cpp.obj	5d5e602b3e3e8d7f
+37	1633	7036504348607600	CMakeFiles/Checkers_MiniMax_AI.dir/game.cpp.obj	a2164f22b5359124
+16	1832	7036504350605447	CMakeFiles/Checkers_MiniMax_AI.dir/board.cpp.obj	e8b1e187ba4b1009
+1345	2290	7036504355204552	CMakeFiles/Checkers_MiniMax_AI.dir/pawn.cpp.obj	eefd90369a946649
+2290	2567	7036504357918732	Checkers_MiniMax_AI.exe	29f87cdf51282c71
+9	3472	7049242907709721	CMakeFiles/Checkers_MiniMax_AI.dir/game.cpp.obj	a2164f22b5359124
+3473	4323	7049242916174006	Checkers_MiniMax_AI.exe	29f87cdf51282c71
