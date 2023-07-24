@@ -36,5 +36,6 @@ Like everything else in Deep Learning, this repo is quickly getting old. Many ot
 Once you have completed the installation, you will be able to use FFmpeg from the command line or by integrating with other applications. Be sure to add the location of FFmpeg executable files to your system's PATH so that you can access them from any location on the command line.
 
 Remember that FFmpeg is a powerful and versatile tool for audio and video processing, but its use requires additional knowledge. See the official FFmpeg documentation for more information on how to use it and the available commands.
+
 2. How to install pytorch
 'pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html'
