@@ -130,18 +130,40 @@ Failed to build webrtcvad
 ERROR: Could not build wheels for webrtcvad, which is required to install pyproject.toml-based projects
 ```
 - You can solve it in the following way
-- El mensaje de error indica que necesita tener Microsoft Visual C++ 14.0 o superior instalado en su sistema para poder construir la rueda del paquete "webrtcvad". A continuación le indicamos cómo proceder:
+- The error message indicates that you need to have Microsoft Visual C++ 14.0 or higher installed on your system in order to build the "webrtcvad" package wheel. Here is how to proceed:
 
-- Asegúrate de que tienes Python instalado en tu sistema Windows. Puedes descargar la última versión de Python desde el sitio web oficial (https://www.python.org) y seguir las instrucciones de instalación.
+- Make sure you have Python installed on your Windows system. You can download the latest version of Python from the official website (https://www.python.org) and follow the installation instructions.
 
-- Instala las herramientas de compilación de Microsoft Visual C++. Puedes descargarlas desde el siguiente enlace: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+- Install the Microsoft Visual C++ compiler tools. You can download them from the following link: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
-- Haz clic en el botón "Download Build Tools" para descargar el instalador.
-Ejecuta el instalador y selecciona la opción "C++ build tools" durante la instalación.
-Siga las instrucciones y complete el proceso de instalación.
-Una vez que hayas instalado las Visual C++ Build Tools, abre un nuevo símbolo del sistema e intenta instalar de nuevo el paquete "webrtcvad" utilizando el siguiente comando:
+- Click on the "Download Build Tools" button to download the installer.
+Run the installer and select the "C++ build tools" option during installation.
+Follow the instructions and complete the installation process.
+Once you have installed the Visual C++ Build Tools, open a new command prompt and try to install the "webrtcvad" package again using the following command:
+```bash
+pip install webrtcvad
+```
+### 3. (Optional) Download Pretrained Models
+Pretrained models are now downloaded automatically. If this doesn't work for you, you can manually download them [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/wiki/Pretrained-models).
 
+### 4. (Optional) Test Configuration
+Before you download any dataset, you can begin by testing your configuration with:
 
+`python demo_cli.py`
+
+If all tests pass, you're good to go.
+
+### 5. (Optional) Download Datasets
+For playing with the toolbox alone, I only recommend downloading [`LibriSpeech/train-clean-100`](https://www.openslr.org/resources/12/train-clean-100.tar.gz). Extract the contents as `<datasets_root>/LibriSpeech/train-clean-100` where `<datasets_root>` is a directory of your choosing. Other datasets are supported in the toolbox, see [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/wiki/Training#datasets). You're free not to download any dataset, but then you will need your own data as audio files or you will have to record it with the toolbox.
+
+### 6. Launch the Toolbox
+You can then try the toolbox:
+
+`python demo_toolbox.py -d <datasets_root>`  
+or  
+`python demo_toolbox.py`  
+
+depending on whether you downloaded any datasets. If you are running an X-server or if you have the error `Aborted (core dumped)`, see [this issue](https://github.com/CorentinJ/Real-Time-Voice-Cloning/issues/11#issuecomment-504733590).
 
 
 
