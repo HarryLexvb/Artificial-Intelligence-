@@ -40,3 +40,9 @@ Remember that FFmpeg is a powerful and versatile tool for audio and video proces
 2. How to install pytorch
 
 `pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html`
+
+```python
+import torch
+print(torch.__version__)
+```  
+
