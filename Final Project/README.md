@@ -38,4 +38,4 @@ Once you have completed the installation, you will be able to use FFmpeg from th
 Remember that FFmpeg is a powerful and versatile tool for audio and video processing, but its use requires additional knowledge. See the official FFmpeg documentation for more information on how to use it and the available commands.
 
 2. How to install pytorch
-'pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html'
+`pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html`
