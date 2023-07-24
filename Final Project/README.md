@@ -38,13 +38,113 @@ Once you have completed the installation, you will be able to use FFmpeg from th
 Remember that FFmpeg is a powerful and versatile tool for audio and video processing, but its use requires additional knowledge. See the official FFmpeg documentation for more information on how to use it and the available commands.
 
 2. How to install pytorch
-
 ```bash
 pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```  
-
+- Verify the installation 
 ```python
 import torch
 print(torch.__version__)
 ```  
+- If you experience this type of error
+```
+C:\Users\harry>pip install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+ERROR: Could not find a version that satisfies the requirement torch==1.9.0+cpu (from versions: 2.0.0, 2.0.0+cpu, 2.0.0+cu117, 2.0.0+cu118, 2.0.1, 2.0.1+cpu, 2.0.1+cu117, 2.0.1+cu118)
+ERROR: No matching distribution found for torch==1.9.0+cpu
+```
+- You can solve it in the following way
+```bash
+pip install torch torchvision torchaudio
+```
+3. Installation of the rest of the requirements
+```bash
+pip install --upgrade pip
+```
+```bash
+pip install inflect
+```
+```bash
+pip install librosa
+```
+```bash
+pip install matplotlib
+```
+```bash
+pip install pyqt5
+```
+```bash
+pip install scikit-learn
+```
+```bash
+pip install sounddevice
+```
+```bash
+pip install soundfile
+```
+```bash
+pip install tqdm
+```
+```bash
+pip install umap-learn
+```
+```bash
+pip install Unidecode
+```
+```bash
+pip install visdom
+```
+```bash
+python -m visdom.server
+```
+```bash
+pip install webrtcvad
+```
+- If you experience this type of error
+```
+Collecting webrtcvad
+  Using cached webrtcvad-2.0.10.tar.gz (66 kB)
+  Preparing metadata (setup.py) ... done
+Building wheels for collected packages: webrtcvad
+  Building wheel for webrtcvad (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [9 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build\lib.win-amd64-cpython-311
+      copying webrtcvad.py -> build\lib.win-amd64-cpython-311
+      running build_ext
+      building '_webrtcvad' extension
+      error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for webrtcvad
+  Running setup.py clean for webrtcvad
+Failed to build webrtcvad
+ERROR: Could not build wheels for webrtcvad, which is required to install pyproject.toml-based projects
+```
+- You can solve it in the following way
+- El mensaje de error indica que necesita tener Microsoft Visual C++ 14.0 o superior instalado en su sistema para poder construir la rueda del paquete "webrtcvad". A continuación le indicamos cómo proceder:
+
+- Asegúrate de que tienes Python instalado en tu sistema Windows. Puedes descargar la última versión de Python desde el sitio web oficial (https://www.python.org) y seguir las instrucciones de instalación.
+
+- Instala las herramientas de compilación de Microsoft Visual C++. Puedes descargarlas desde el siguiente enlace: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+
+- Haz clic en el botón "Download Build Tools" para descargar el instalador.
+Ejecuta el instalador y selecciona la opción "C++ build tools" durante la instalación.
+Siga las instrucciones y complete el proceso de instalación.
+Una vez que hayas instalado las Visual C++ Build Tools, abre un nuevo símbolo del sistema e intenta instalar de nuevo el paquete "webrtcvad" utilizando el siguiente comando:
+
+
+
+
+
+
+
 
